@@ -1,0 +1,320 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TopLabel = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local ButtonFrame = Instance.new("ScrollingFrame")
+local Home = Instance.new("TextButton")
+local Main = Instance.new("TextButton")
+local Toggles = Instance.new("TextButton")
+local Teleports = Instance.new("TextButton")
+local AutoBuy = Instance.new("TextButton")
+local Animations = Instance.new("TextButton")
+local Fun = Instance.new("TextButton")
+local More = Instance.new("TextButton")
+local Premium = Instance.new("TextButton")
+local Credits = Instance.new("TextButton")
+local HomeFrame = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner = Instance.new("UICorner")
+local TeleportFrame = Instance.new("Frame")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.330254078, 0, 0.290496796, 0)
+Frame.Size = UDim2.new(0, 473, 0, 291)
+
+TopLabel.Name = "TopLabel"
+TopLabel.Parent = Frame
+TopLabel.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+TopLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TopLabel.BorderSizePixel = 0
+TopLabel.Size = UDim2.new(0, 473, 0, 48)
+
+TextButton.Parent = TopLabel
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Position = UDim2.new(0.769556046, 0, -0.288888931, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.GothamBlack
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 14.000
+
+TextLabel.Parent = TopLabel
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.291754752, 0, -0.0416666642, 0)
+TextLabel.Size = UDim2.new(0, 196, 0, 51)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "1"
+TextLabel.TextColor3 = Color3.fromRGB(140, 57, 255)
+TextLabel.TextSize = 28.000
+
+TextLabel_2.Parent = TopLabel
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.52642709, 0, 0.0861110762, 0)
+TextLabel_2.Size = UDim2.new(0, 59, 0, 37)
+TextLabel_2.Font = Enum.Font.GothamBold
+TextLabel_2.Text = "F O  "
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 26.000
+
+TextLabel_3.Parent = TopLabel
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.384778082, 0, 0.0861110687, 0)
+TextLabel_3.Size = UDim2.new(0, 59, 0, 37)
+TextLabel_3.Font = Enum.Font.GothamBold
+TextLabel_3.Text = "A"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 26.000
+
+ButtonFrame.Name = "ButtonFrame"
+ButtonFrame.Parent = Frame
+ButtonFrame.Active = true
+ButtonFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ButtonFrame.BackgroundTransparency = 1.000
+ButtonFrame.BorderSizePixel = 0
+ButtonFrame.Position = UDim2.new(0, 0, 0.171821311, 0)
+ButtonFrame.Size = UDim2.new(0, 136, 0, 239)
+ButtonFrame.ScrollBarThickness = 4
+
+Home.Name = "Home"
+Home.Parent = ButtonFrame
+Home.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Home.BorderSizePixel = 0
+Home.Position = UDim2.new(0.0882352963, 0, 0.0121065713, 0)
+Home.Size = UDim2.new(0, 114, 0, 50)
+Home.Font = Enum.Font.GothamBold
+Home.Text = "HOME"
+Home.TextColor3 = Color3.fromRGB(255, 255, 255)
+Home.TextSize = 14.000
+
+Main.Name = "Main"
+Main.Parent = ButtonFrame
+Main.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.0882352963, 0, 0.110044718, 0)
+Main.Size = UDim2.new(0, 114, 0, 50)
+Main.Font = Enum.Font.GothamBold
+Main.Text = "MAIN"
+Main.TextColor3 = Color3.fromRGB(255, 255, 255)
+Main.TextSize = 14.000
+
+Toggles.Name = "Toggles"
+Toggles.Parent = ButtonFrame
+Toggles.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Toggles.BorderSizePixel = 0
+Toggles.Position = UDim2.new(0.0882352963, 0, 0.206264645, 0)
+Toggles.Size = UDim2.new(0, 114, 0, 50)
+Toggles.Font = Enum.Font.GothamBold
+Toggles.Text = "TOGGLES"
+Toggles.TextColor3 = Color3.fromRGB(255, 255, 255)
+Toggles.TextSize = 14.000
+
+Teleports.Name = "Teleports"
+Teleports.Parent = ButtonFrame
+Teleports.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Teleports.BorderSizePixel = 0
+Teleports.Position = UDim2.new(0.0882352963, 0, 0.307639211, 0)
+Teleports.Size = UDim2.new(0, 114, 0, 50)
+Teleports.Font = Enum.Font.GothamBold
+Teleports.Text = "TELEPORTS"
+Teleports.TextColor3 = Color3.fromRGB(255, 255, 255)
+Teleports.TextSize = 14.000
+
+AutoBuy.Name = "AutoBuy"
+AutoBuy.Parent = ButtonFrame
+AutoBuy.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+AutoBuy.BorderSizePixel = 0
+AutoBuy.Position = UDim2.new(0.0882352963, 0, 0.407295555, 0)
+AutoBuy.Size = UDim2.new(0, 114, 0, 50)
+AutoBuy.Font = Enum.Font.GothamBold
+AutoBuy.Text = "AUTOBUY"
+AutoBuy.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoBuy.TextSize = 14.000
+
+Animations.Name = "Animations"
+Animations.Parent = ButtonFrame
+Animations.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Animations.BorderSizePixel = 0
+Animations.Position = UDim2.new(0.0882352963, 0, 0.506951928, 0)
+Animations.Size = UDim2.new(0, 114, 0, 50)
+Animations.Font = Enum.Font.GothamBold
+Animations.Text = "ANIMATIONS"
+Animations.TextColor3 = Color3.fromRGB(255, 255, 255)
+Animations.TextSize = 14.000
+
+Fun.Name = "Fun"
+Fun.Parent = ButtonFrame
+Fun.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Fun.BorderSizePixel = 0
+Fun.Position = UDim2.new(0.0882352963, 0, 0.604890049, 0)
+Fun.Size = UDim2.new(0, 114, 0, 50)
+Fun.Font = Enum.Font.GothamBold
+Fun.Text = "FUN"
+Fun.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fun.TextSize = 14.000
+
+More.Name = "More"
+More.Parent = ButtonFrame
+More.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+More.BorderSizePixel = 0
+More.Position = UDim2.new(0.0882352963, 0, 0.709701061, 0)
+More.Size = UDim2.new(0, 114, 0, 50)
+More.Font = Enum.Font.GothamBold
+More.Text = "MORE"
+More.TextColor3 = Color3.fromRGB(255, 255, 255)
+More.TextSize = 14.000
+
+Premium.Name = "Premium"
+Premium.Parent = ButtonFrame
+Premium.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Premium.BorderSizePixel = 0
+Premium.Position = UDim2.new(0.0882352963, 0, 0.914168417, 0)
+Premium.Size = UDim2.new(0, 114, 0, 50)
+Premium.Font = Enum.Font.GothamBold
+Premium.Text = "PREMIUM"
+Premium.TextColor3 = Color3.fromRGB(255, 255, 255)
+Premium.TextSize = 14.000
+
+Credits.Name = "Credits"
+Credits.Parent = ButtonFrame
+Credits.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(0.0882352963, 0, 0.814512074, 0)
+Credits.Size = UDim2.new(0, 114, 0, 50)
+Credits.Font = Enum.Font.GothamBold
+Credits.Text = "CREDITS"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 14.000
+
+HomeFrame.Name = "HomeFrame"
+HomeFrame.Parent = Frame
+HomeFrame.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+HomeFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HomeFrame.BorderSizePixel = 0
+HomeFrame.Position = UDim2.new(0.289640605, 0, 0.170103088, 0)
+HomeFrame.Size = UDim2.new(0, 336, 0, 243)
+
+TextLabel_4.Parent = HomeFrame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.205357149, 0, 0.502057612, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_4.Font = Enum.Font.GothamBold
+TextLabel_4.Text = "Welcome, Robloxian"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 23.000
+
+TextLabel_5.Parent = HomeFrame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.205357134, 0, 0.646090567, 0)
+TextLabel_5.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_5.Font = Enum.Font.GothamBold
+TextLabel_5.Text = "Status: Premium"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 23.000
+
+ImageLabel.Parent = HomeFrame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(21, 21, 22)
+ImageLabel.Position = UDim2.new(0.372023821, 0, 0.115226336, 0)
+ImageLabel.Size = UDim2.new(0, 88, 0, 88)
+ImageLabel.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner.Parent = ImageLabel
+
+TeleportFrame.Name = "TeleportFrame"
+TeleportFrame.Parent = Frame
+TeleportFrame.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+TeleportFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TeleportFrame.BorderSizePixel = 0
+TeleportFrame.Position = UDim2.new(0.289640605, 0, 0.16323024, 0)
+TeleportFrame.Size = UDim2.new(0, 336, 0, 243)
+TeleportFrame.Visible = false
+
+-- Scripts:
+
+local function BJJQYYY_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local Frame = script.Parent.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Frame.Visible = false
+	end)
+end
+coroutine.wrap(BJJQYYY_fake_script)()
+local function GVEPK_fake_script() -- Frame.Dragable 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(GVEPK_fake_script)()
+local function EAZDHZ_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
+
+	local Players = game:GetService("Players")
+	
+	local player = Players.LocalPlayer
+	
+	local userId = player.UserId
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	local imageLabel = script.Parent
+	imageLabel.Image = content
+end
+coroutine.wrap(EAZDHZ_fake_script)()
